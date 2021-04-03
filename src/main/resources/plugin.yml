@@ -1,0 +1,5 @@
+name: MicalX
+version: @version@
+main: me.mical.micalx.MicalX
+api-version: 1.14
+authors: [ Mical ]
