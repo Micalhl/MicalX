@@ -3,7 +3,7 @@ package me.mical.micalx.nms;
 import org.bukkit.Server;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class NMSManager {
+public class NMS {
 
     public static NMSImpl handle(final JavaPlugin plugin) {
         try {
