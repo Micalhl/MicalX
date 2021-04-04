@@ -1,5 +1,6 @@
 package me.mical.micalx.nms;
 
+import me.mical.micalx.utils.I18n;
 import org.bukkit.Server;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -40,10 +41,11 @@ public class NMS {
                 case "v1_16_R3":
                     return new me.mical.micalx.nms.v1_16_R3.NMSImpl();
                 default:
+                    I18n.logError("获取", "NMSImpl", "不存在该版本 {0} 的 NMSImpl.", version);
                     return null;
             }
         } catch (Throwable e) {
-            e.printStackTrace();
+            I18n.logError("获取", "NMSImpl", e, null);
             return null;
         }
     }
