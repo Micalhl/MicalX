@@ -34,12 +34,12 @@ public class NMS {
                     return new me.mical.micalx.nms.v1_14_R1.NMSImpl();
                 case "v1_15_R1":
                     return new me.mical.micalx.nms.v1_15_R1.NMSImpl();
-                //case "v1_16_R1":
-                //    return new me.mical.micalx.nms.v1_16_R1.NMSImpl();
-                //case "v1_16_R2":
-                //    return new me.mical.micalx.nms.v1_16_R2.NMSImpl();
-                //case "v1_16_R3":
-                //    return new me.mical.micalx.nms.v1_16_R3.NMSImpl();
+                case "v1_16_R1":
+                    return new me.mical.micalx.nms.v1_16_R1.NMSImpl();
+                case "v1_16_R2":
+                    return new me.mical.micalx.nms.v1_16_R2.NMSImpl();
+                case "v1_16_R3":
+                    return new me.mical.micalx.nms.v1_16_R3.NMSImpl();
                 default:
                     I18n.logError("获取", "NMSImpl", "不存在该版本 {0} 的 NMSImpl.", version);
                     return null;
